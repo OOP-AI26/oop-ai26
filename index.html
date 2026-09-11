@@ -1,0 +1,197 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="refresh" content="0.5; url=/Praktikum-Gasal-2026/">
+
+    <title>Praktikum PBO Gasal 2026</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Inter, -apple-system, BlinkMacSystemFont,
+                         "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background:
+                radial-gradient(circle at 20% 20%, rgba(99, 102, 241, 0.12), transparent 30%),
+                radial-gradient(circle at 80% 80%, rgba(168, 85, 247, 0.10), transparent 30%),
+                #fafafa;
+            color: #18181b;
+        }
+
+        .container {
+            width: min(90%, 460px);
+            text-align: center;
+            padding: 48px 40px;
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.06);
+            border-radius: 24px;
+            box-shadow:
+                0 20px 60px rgba(0, 0, 0, 0.06),
+                0 2px 8px rgba(0, 0, 0, 0.03);
+            backdrop-filter: blur(12px);
+        }
+
+        .icon {
+            width: 64px;
+            height: 64px;
+            margin: 0 auto 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 18px;
+            background: #18181b;
+            color: white;
+            font-size: 26px;
+            font-weight: 700;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 10px;
+        }
+
+        .description {
+            color: #71717a;
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 28px;
+        }
+
+        .loader {
+            width: 100%;
+            height: 4px;
+            overflow: hidden;
+            border-radius: 999px;
+            background: #e4e4e7;
+            margin-bottom: 14px;
+        }
+
+        .loader::before {
+            content: "";
+            display: block;
+            height: 100%;
+            width: 40%;
+            border-radius: inherit;
+            background: #18181b;
+            animation: loading 0.7s ease-in-out infinite;
+        }
+
+        .status {
+            font-size: 13px;
+            color: #a1a1aa;
+        }
+
+        .fallback {
+            margin-top: 28px;
+            font-size: 13px;
+            color: #a1a1aa;
+        }
+
+        .fallback a {
+            color: #18181b;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .fallback a:hover {
+            text-decoration: underline;
+        }
+
+        @keyframes loading {
+            0% {
+                transform: translateX(-120%);
+            }
+
+            100% {
+                transform: translateX(300%);
+            }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background:
+                    radial-gradient(circle at 20% 20%, rgba(99, 102, 241, 0.15), transparent 30%),
+                    radial-gradient(circle at 80% 80%, rgba(168, 85, 247, 0.12), transparent 30%),
+                    #09090b;
+                color: #fafafa;
+            }
+
+            .container {
+                background: rgba(24, 24, 27, 0.8);
+                border-color: rgba(255, 255, 255, 0.08);
+            }
+
+            .icon {
+                background: #fafafa;
+                color: #18181b;
+            }
+
+            .description {
+                color: #a1a1aa;
+            }
+
+            .loader {
+                background: #27272a;
+            }
+
+            .loader::before {
+                background: #fafafa;
+            }
+
+            .status,
+            .fallback {
+                color: #71717a;
+            }
+
+            .fallback a {
+                color: #fafafa;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="container">
+        <div class="icon">P</div>
+
+        <h1>Praktikum PBO Gasal 2026</h1>
+
+        <p class="description">
+            Preparing your workspace.<br>
+            You will be redirected shortly.
+        </p>
+
+        <div class="loader"></div>
+
+        <p class="status">Redirecting...</p>
+
+        <p class="fallback">
+            Not redirected?
+            <a href="/Praktikum-Gasal-2026/">Open manually</a>
+        </p>
+    </main>
+
+    <script>
+        setTimeout(() => {
+            window.location.replace("/Praktikum-Gasal-2026/");
+        }, 500);
+    </script>
+
+</body>
+</html>
+```
